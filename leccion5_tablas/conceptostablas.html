@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<title>Concepto Tablas</title>
+</head>
+<body>
+    <h1>Tablas</h1>
+    <p>Las tablas nos sirver para representar datos relacionados</p>
+    <h2>Tabla</h2>
+<table> <!--El contenedor principal-->
+    <tr> 
+        <th>Nombre</th> <!--th significa table head, es una celda que representa un encabezado-->
+        <th>Curso</th>
+        <th>Nota</th>
+    </tr>
+    <tr>    <!--tr significa table row, es decir fila de la tabla-->
+        <td>Juan</td>   <!--td significa table data, es una celda que contiene datos-->
+        <td>HTML</td>
+        <td>90</td>
+    </tr>
+</table>
+    <hr>
+    <h1>Estudiante</h1>
+
+    <table>
+
+        <tr>
+            <th>Nombre</th>
+            <th>Edad</th>
+            <th>Carrera</th>
+        </tr>
+
+        <tr>
+            <td>Juan</td>
+            <td>28</td>
+            <td>Ingenieria en Sistemas</td>
+        </tr>
+    </table>
+
+        <hr>
+    <!--thead nos permite separar las diferentes partes, en este caso thead para los encabezados-->
+
+    <table>
+
+        <thead>
+
+            <tr>
+                <th>Nombre</th>
+                <th>Curso</th>
+                <th>Nota</th>
+            </tr>
+
+        </thead>
+        <!--tbody Representa el cuerpo de la tabla-->
+        <tbody>
+            <tr>
+                <td>Juan</td>
+                <td>HTML</td>
+                <td>85</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <tfoot>
+        <tr>
+            <!-- colspan permite que una celda ocupe varias columnas en este caso 2 columnas-->
+            <th colspan="2">Promedio</th>
+            <th>92.5</th>
+        </tr>
+    </tfoot>
+
+    <br><hr>
+    <table>
+
+        <tr>
+            <th>Nombre</th>
+            <th>Curso</th>
+            <th>Nota</th>
+        </tr>
+
+        <tr>
+            <td colspan="2">Juan Manuel </td>
+            <td>95</td>
+        </tr>
+    </table>
+<br><hr>
+    <!--rowspan es el equivalente pero en filas, el rowspan permite que una celda ocupe varias filas-->
+
+    <table>
+        <tr>
+            <th>Estudiante</th>
+            <th>Curso</th>
+        </tr>
+
+        <tr>
+            <td rowspan="2">Juan</td><!--Aca Juan ocupa dos filas-->
+            <td>HTML</td>
+        </tr>
+
+        <tr>
+            <td>CSS</td>
+        </tr>
+    </table>
+    <!--colspan -> columnas -> horizontal-->
+    <!--rowspan -> filas -> vertical-->
+    <br><hr>
+    
+    <h2>Ejemplo completo de tabla</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Carrera</th>
+                <th>Semestre</th>
+                <th>Nota</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Juan Manuel</td>
+                <td>Ingenieria en Sistemas</td>
+                <td>Octavo</td>
+                <td>80</td>
+            </tr>
+
+            <tr>
+                <td>Ludi</td>
+                <td>Ingenieria en Sistemas</td>
+                <td>Octavo</td>
+                <td>90</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="3">Promedio</th>
+                <th>90.6</th>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
