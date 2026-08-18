@@ -1,0 +1,60 @@
+<!-- Mis apuntes sobre los conceptos -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Concepto Formulario</title>
+</head>
+<body>
+    <h1>Leccion 6 Formularios</h1>
+
+    <h2>¿Qué es un formulario?</h2>
+    <p>Un formulario permite que el usuario introduzca informacion.</p>
+    <p>El elemento principal es <code>&lt;form&gt; &lt;/form&gt;</code></p>
+    <h3>&lt;input&gt;</h3>
+    <p>Es el elemento mas usado dentro de un formulario, el <code>&lt;input type="text"&gt;</code> crea un campo para texto</p>
+    <input type="text">
+    <p>El <code>&lt;input type="email"&gt; </code> para correos electronico</p>
+        <input type="email"> 
+    <p>El <code>&lt;input type="password"&gt;;</code> es para el tipo contraseña</p>
+        <input type="password">
+    <p>El <code>&lt;input type="number"
+        <br>min="1"
+        <br>max="100"&gt; </code>
+        <br>solo permite introducir numeros pero en este ultimo tambien se puede type="number" min="1" max="100" el cual le indicamos que el minimo es de 1 y maximo es de 100</p>
+        <input 
+            type="number"
+            min="1"
+            max="100"
+        >
+    <hr>
+    <h2>label</h2>
+    <p>El label sirve para indicar que informacion debe ingresar el usuario.</p>
+    <p>Por ejemplo: </p>
+    <code>
+        &lt;label&gt;Nombre:&lt;/label&gt;
+        <br>&lt;input type="text"&gt;
+    &gt;</code>
+    <br>
+    <label>Nombre:</label>
+    <input type="text">
+    <p>Existe una mejor forma de relacionar el label con el input.</p>
+
+    <p>&lt;label for="nombre"&gt;Nombre:&lt;/label&gt;</p>
+    <p>&lt;input type="text" id="nombre" placeholder="Escribe tu nombre"&gt;</p>
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre"
+    placeholder="Escribe tu nombre">
+
+    <!--required, hace que el campo sea obligatorio-->
+    <p>Aca creamos otro campo para la edad, al igual al anterior se uso &lt;label for="edad"&gt;Edad:&lt;/label&gt;</p>
+    <p>&lt;input type="number" id="edad" placeholder="Escriba su nombre"&gt;</p>
+    <label for="edad">Edad:</label>
+    <input type="number" id="edad"
+        min="0" max="100"
+    placeholder="Escriba su edad"
+    required>
+<!--El required es un campo obligatorio, si el usuario intenta enviar el formulario, le da una advertencia que tiene que completarlo-->
+
+
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!-- Primer ejercicio sobre formularios -->
+ <!-- Perfil -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Perfil</title>
+</head>
+<body>
+    <h1>Mi perfil</h1>
+    <form>
+        <label for="nombre">Nombre:</label>
+        <input
+            type="text"
+            id="nombre"
+            name="nombre"
+            placeholder="Escribe tu nombre"
+            required>
+        <br><br>
+
+        <label for="apellido">Apellido:</label>
+        <input
+            type="text"
+            id="apellido"
+            name="apellido"
+            placeholder="Escribe tu apellido"
+            required>
+        <br><br>
+
+        <label for="edad">Edad:</label>
+        <input
+            type="number"
+            id="edad"
+            name="edad"
+            min="1"
+            max="100"
+            required>
+        <br><br>
+
+        <label for="correo">Correo electrónico:</label>
+        <input
+            type="email"
+            id="correo"
+            name="correo"
+            placeholder="usuario@gmail.com"
+            required>
+        <br><br>
+
+        <label for="password">Contraseña:</label>
+        <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="***********"
+            required>
+        <br><br>
+        <label for="carrera">Carrera:</label>
+        <select id="carrera" name="carrera">
+            <option value="sistemas">Ingenieria en Sistemas</option>
+            <option value="industrial">Ingenieria Industrial</option>
+            <option value="admon">Administracion</option>
+            <option value="gastronomia">Gastronomia</option>
+            <option value="otras">Otra</option>
+        </select>
+        <br><br>
+        <label for="descripcion">Descripcion personal</label>
+        <textarea id="descripcion" name="descripcion"></textarea>
+        <br><br>
+        <button type="submit">Guardar perfil</button>
+
+    </form>
+    <!--
+    Mini reto conceptual
+
+Después de hacer el código, respóndeme:
+
+¿Para qué sirve <form>?
+¿Cuál es la diferencia entre <label> e <input>?
+¿Para qué sirve type="email"?
+¿Qué hace required?
+¿Cuál es la diferencia entre id y name?
+¿Para qué sirve placeholder?
+¿Para qué sirve <select>?
+¿Para qué sirve <option>?
+¿Para qué sirve <textarea>?
+¿Qué hace type="submit"?-->
+<!--1. <form> es el elemento que define y contiene un formulario en html
+    2. Label es para mostrar que informacion se debe de ingresar, el input es para ingresar la informacion
+    3. el type="email", nos sirve para ingresar el tipo email
+    4. El required es para que sea obligatorio un campo, por ejemplo si el usuaio quiere presionar el boton de enviar, no se le permitira hasta completar toda la informacion
+    5. el id es para identificar y el name para el nombre del campo
+    6. el placeholder para mostrar en el campo que debe de ingresar el usuario, cuando el usuario presione el campo se borra el comentario(podemos decirlo asi)
+    7. el select es para mostrar una lista desplegable con opciones
+    8. el opcion va dentro del select y nos permite ingresar las opciones
+    9. el textarea es para ingresar comentario dentro de un campo dentro de la pagina
+    10. el submit es para el boton y permite enviar el formulario
+</body>
+</html>
