@@ -1,0 +1,61 @@
+<!--Conceptos sobre formulario 6.2-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Radio buttons</title>
+</head>
+<body>
+    <h1>Otros conceptos de los formularios</h1>
+    <form>
+        <h2><code>type="radio"</code></h2>
+        <p>type radio: sirve para elegir una sola opcion entre varias</p>
+        <label>
+            <input type="radio" name="nivel" value="basico">
+            Básico 
+        </label>
+
+        <label>
+            <input type="radio" name="nivel" value="intermedio">
+            Intermedio
+        </label>
+        
+        <label>
+            <input type="radio" name="nivel" value="avanzado">
+            Avanzado
+        </label>
+        <br>
+        <h2><code>type "checkbox"</code></h2>
+        <p>Checkbox: sirve para elegir varias respuestas</p>
+        <label>
+            <input type="checkbox" name="tecnologia" value="html">
+            HTML
+        </label>
+        <label>
+            <input type="checkbox" name="tecnologia" value="css">
+            CSS
+        </label>
+        <label>
+            <input type="checkbox" name="tecnologia" value="js">
+            JavaScript
+        </label>
+
+        <p>La diferencia es que radio solo permite una sola opcion, en cambio el checkbox permite varias opciones</p>
+        <h2><code>type="date"</code></h2>
+        <p>Nos permite pedir el tipo fecha, el navegador proporciona un selector de fecha</p>
+        <label for="fecha">Fecha de nacimiento</label>
+        <input 
+            type="date"
+            id="fecha"
+            name="fecha">
+        
+        <h2>type="file"</h2>
+        <p>Con el type="file" nos permite seleccionar un archivo</p>
+        <label for="archivo">Subir archivo</label>
+        <input
+            type="file"
+            id="archivo"
+            name="archivo">
+    </form>
+</body>
+</html>

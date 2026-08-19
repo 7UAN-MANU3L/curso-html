@@ -1,0 +1,133 @@
+<!--Minireto perfil modificado-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Perfil Modificado</title>
+</head>
+<body>
+    <h1>Mi perfil Modificado</h1>
+    <form>
+        <label for="nombre">Nombre:</label>
+        <input 
+            type="text"
+            id="nombre"
+            name="nombre"
+            placeholder="Escribe tu nombre"
+            required>
+        <br><br>
+
+        <labe for="apellido">Apellido:</label>
+        <input
+            type="text"
+            id="apellido"
+            name="apellido"
+            placeholder="Escribe tu apellido"
+            required>
+        <br><br>
+
+        <label for="edad">Edad:</label>
+        <input
+            type="number"
+            id="edad"
+            name="edad"
+            min="1"
+            max="100"
+            required>
+        <br><br>
+
+        <label for="correo">Correo Electronico:</label>
+        <input
+            type="email"
+            id="correo"
+            name="correo"
+            placeholder="usuario@gmail.com"
+            required>
+        <br><br>
+
+        <label for="password">Contraseña:</label>
+        <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="********"
+            required>
+        <br><br>
+
+        <label for="carrera">Carrera:</label>
+        <select id="carrera" name="carrera">
+            <option value="sistema">Ingenieria en Sistemas</option>
+            <option value="industrial">Ingenieria Industrial</option>
+            <option value="admon">Administracion</option>
+            <option value="gastronomia">Gastronomia</option>
+            <option value="otras">Otra</option>
+        </select>
+        <br><br>
+        
+        <h3>Nivel de HTML</h3>
+        <label>
+            <input type="radio" name="nivel" value="basico">
+            Básico
+        </label>
+        <label>
+            <input type="radio" name="nivel" value="intermedio">
+            Intermedio
+        </label>
+        <label>
+            <input type="radio" name="nivel" value="avanzado">
+            Avanzado
+        </label>
+
+        <h3>Tecnologias que quieres aprender</h3>
+        <label>
+            <input type="checkbox" name="tecnologia" value="html">
+            HTML
+        </label>
+        <label>
+            <input type="checkbox" name="tecnologia" value="css">
+            CSS
+        </label>
+        <label>
+            <input type="checkbox" name="tecnologia" value="js">
+            JavaScript
+        </label>
+        <label>
+            <input type="checkbox" name="tecnologia" value="python">
+            Python
+        </label>
+        <label>
+            <input type="checkbox" name="tecnologia" value="java">
+            Java
+        </label>
+        <h3>Fecha de nacimiento</h3>
+        <label for="fecha">Fecha de nacimiento:</label>
+        <input
+            type="date"
+            id="fecha"
+            name="fecha">
+        
+        <h3>Foto de perfil</h3>
+        <label for="archivo">Insertar foto de perfil</label>
+        <input
+            type="file"
+            id="archivo"
+            name="archivo">
+        <br><br>
+        <label for="descripcion">Descripcion personal</label>
+        <textarea id="descripcion" name="descripcion"></textarea>
+        <br><br>
+        <button type="submit">Guardar perfil</button>
+    </form>
+
+    <!--1. ¿Cuál es la diferencia entre radio y checkbox?
+        2. ¿Por qué los tres radio deben tener el mismo name?
+        3. ¿Para qué sirve value?
+        4. ¿Qué tipo de dato permite seleccionar type="date"?
+        5. ¿Qué hace type="file"?-->
+        <!--1. En que radio solo permite una opcion, en cambio el checkbox permite varias opciones-->
+        <!--2. para que pertenezcan al mismo grupo y que normalmente podamos seleccionar uno-->
+        <!--3. es el valor que representa esa opcion cuando el formulario se envia-->
+        <!--4. El type="date" nos permite seleccionar fecha-->
+        <!--5. El type="file" nos permite seleccionar un archivo-->
+</body>
+</html>
