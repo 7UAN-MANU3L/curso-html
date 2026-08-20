@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario Completo</title>
+</head>
+<body>
+    <h1>Formulario completo</h1>
+    <form>
+        <fieldset>
+            <legend>Informacion Personal</legend>
+            
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre">
+            <br>
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido">
+            <br>
+            <label for="correo">Correo electronico:</label>
+            <input type="email" id="correo" name="correo">
+        </fieldset>
+
+        <br><br>
+        <fieldset>
+            <legend>Informacion Academica</legend>
+            <label for="carrera">Carrera:</label>
+            <select id="carrera" name="carrera">
+                <option value="sistema">Ingenieria en Sistema</option>
+                <option value="industrial">Ingenieria Industrial</option>
+                <option value="admon">Administracion</option>
+                <option value="agronomia">Agronomia</option>
+                <option value="otros">Otra</option>
+            </select>
+            <br>
+            <p>Nivel de HTML</p>
+                <input 
+                    type="radio"
+                    id="basico" 
+                    name="nivel"
+                    value="basico">
+            <label for="basico">Basico</label>
+                <input 
+                    type="radio"
+                    id="intermedio"
+                    name="nivel" 
+                    value="intermedio">
+                
+            <label for="intermedio">Intermedio</label>
+
+                <input 
+                    type="radio" 
+                    id="avanzado"
+                    name="nivel" 
+                    value="avanzado">
+            <label for="avanzado">Avanzado</label>
+            <br><br>
+            <p>Tecnologias que quieres aprender</p>
+            <label>
+                <input type="checkbox" name="tecnologia" value="html">
+                HTML
+            </label>
+            <label>
+                <input type="checkbox" name="tecnologia" value="css">
+                CSS
+            </label>
+            <label>
+                <input type="checkbox" name="tecnologia" value="js">
+                JavaScript
+            </label>
+            <label>
+                <input type="checkbox" name="tecnologia" value="python">
+                Python
+            </label>
+            <label>
+                <input type="checkbox" name="tecnologia" value="java">
+                Java
+            </label>
+            <label>
+                <input type="checkbox" name="tecnologia" value="c++">
+                C++
+            </label>
+        </fieldset>
+        <br><br>
+        <fieldset>
+            <legend>Informacion adicional</legend>
+            <label for="nacimiento">Fecha de nacimiento</label>
+            <input type="date" id="nacimiento" name="nacimiento">
+            <br><br>
+            <label for="archivo">Foto de perfil</label>
+            <input type="file" id="archivo" name="archivo">
+            <br>
+            <label for="descripcion">Descripcion personal</label>
+            <textarea id="descripcion" name="descripcion"></textarea>
+        </fieldset>
+        <br>
+        <button type="submit">Guardar perfil</button>
+    </form>
+    <!--1. ¿Para qué sirve <fieldset>?
+        2. ¿Para qué sirve <legend>?
+        3. ¿Por qué sería mejor usar fieldset en un formulario grande?
+        4. ¿Qué diferencia hay entre fieldset y <div>?-->
+    <!--1. para agrupar los elementos de datos como informacion personal, informacion academica-->
+    <!--2. El legend sirve y va complementado con fieldset para un titulo de   un grupo de datos-->
+    <!--3. Para tener una mayor organizacion con los datos y ademas ayuda a la semantica y accesibilidad del formulario-->
+    <!--4. El fielset y el div son casi lo mismo ya que agrupan datos, solo que el fielset se usa para mayor organizacion  y estos controles de formulario forman un grupo relacionado y el div es un contenedor-->
+</body>
+</html>
