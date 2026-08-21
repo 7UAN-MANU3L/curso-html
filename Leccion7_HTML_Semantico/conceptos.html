@@ -1,0 +1,186 @@
+<!--conceptos sobre el HTML Semantico-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h1>HTML Semántico</h1>
+    <fieldset>
+        <legend>¿Qué significa "semántico"?</legend>
+        <p><code>&lt;div&gt;&lt;h1&gt;Mi sitio web&lt;/h1&gt;&lt;/div&gt;</code></p>
+        <p>div simplemente significa "Aqui hay un contenedor."</p>
+        <p>eso ayuda a:</p>
+        <ul>
+            <li>Los navegadores</li>
+            <li>Los motores de busqueda</li>
+            <li>Las tecnologias de asistencia</li>
+            <li>Otros desarrolladores</li>
+            <li>Y a nosotros mismos cuando revisamos nuestro codigo</li>
+        </ul>
+    </fieldset>
+
+    <fieldset>
+        <legend>header</legend>
+        <p>El header significa el encabezado, mas que todo el encabezado d ela pagina</p>
+        <p><code>&lt;header&gt;&lt;h1&gt;Mi sitio web&lt;/h1&gt;&lt;/header&gt;</code></p>
+    </fieldset>
+    <hr>
+    <header>
+        <h1>Mi sitio web</h1>
+        <p>Bienvenido a mi pagina</p>
+    </header>
+    <p>Puede contener</p>
+    <ul>
+        <li>Titulos</li>
+        <li>Logotipos</li>
+        <li>Informacion introductoria</li>
+        <li>Navegacion</li>
+    </ul>
+
+    <p>Por ejemplo</p>
+    <header>
+        <h1>Juan Manuel - Desarrollo Web</h1>
+        <p>Aprendiendo HTML</p>
+    </header>
+    <hr>
+    <fieldset>
+        <legend><code>&lt;nav&gt;</code></legend>
+        <p>nav representa una seccion de navegacion</p>
+        <p>por ejemplo:</p>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="acerca.html">Acerca de mi</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </fieldset>
+    <hr>
+    <fieldset>
+        <legend><code><h3>&lt;main&gt;</h3></code></legend>
+        <p>main representa el contenido principal de la pagina</p>
+        <p>ejemplo:</p>
+        <main>
+            <h2>sobre mi</h2>
+            <p>
+                Estoy aprendiendo desarrollo web
+            </p>
+        </main>
+        <p>Nota: normalmente una pagina debe de tener un solo main</p>
+    </fieldset>
+    <hr>
+    <fieldset>
+        <legend><code>&lt;section&gt;</code></legend>
+        <p>section sirve para agrupar contenido que pertenece a una seccion tematica</p>
+        <p>por ejemplo:</p>
+        <main>
+            <section>
+                <h2>Sobre mi</h2>
+                <p>Estoy estudiando Ingenieria en Sistemas.</p>
+            </section>
+            <section>
+                <h2>Misa objetivos</h2>
+                <p>Quiero aprender desarrollo web.</p>
+            </section>
+            <p>en este caso tenemos dos temas diferentes</p>
+            <p>main</p>
+            <ul>
+                <li>section &rarr; sobre mi</li>
+                <li>section &rarr; Mis objetivos</li>
+            </ul>
+        </main>
+    </fieldset>
+<hr>
+    <fieldset>
+        <legend><code>&lt;article&gt;</code></legend>
+        <p>article representa contenido que puede considerarse independiente o autocontenido</p>
+        <p>por ejemplo una publicacion</p>
+        <article>
+            <h2>Mi primer proyecto HTML</h2>
+            <p>
+                Hoy termine mi primer proyecto utilizando HTML.
+            </p>
+        </article>
+        <p>Otros ejemplos podrian ser:</p>
+        <ul>
+            <li>Una publicacion de blog</li>
+            <li>Una noticia</li>
+            <li>Un comentario</li>
+            <li>Una publicacion de un foro</li>
+            <li>Una entrada independiente</li>
+        </ul>
+        <p>por ejemplo:</p>
+        <section>
+            <h2>Mis proyectos</h2>
+            
+            <article>
+                <h3>Proyecto 1</h3>   
+                <p>Mi primera pagina HTML.</p>
+            </article>
+            
+            <article>
+                <h3>Proyecto 2</h3>
+                <p>Mi primer formulario</p>
+            </article>
+        </section>
+        
+        <p>Aqui tenemos:</p>
+        <p>ARTICULE &rarr; Proyecto 1</p>
+        <p>ARTICLE &rarr; Proyecto 2</p>
+    </fieldset>
+    <hr>
+    <fieldset>
+        <legend><code><h3>&lt;aside&gt;</h3></code></legend>
+        <p>aside representa contenido relacionado pero secundario al contenido principal, por ejemplo:</p>
+        <aside>
+            <h2>Recursos</h2>
+            <p>Tambien puedes aprender CSS y JavaScript.</p>
+        </aside>
+        <p>Podria utilizarse para:</p>
+        <ul>
+            <li>Informacion adicional</li>
+            <li>Enlaces relacionados</li>
+            <li>Una barra lateral</li>
+            <li>Recomendaciones</li>
+            <li>Publicidad</li>
+        </ul>
+    </fieldset>
+    <hr>
+
+    <fieldset>
+        <legend><code><h3>&lt;footer&gt;</h3></code></legend>
+        <p>footer representa el pie de la pagina por ejemplo</p>
+        <footer>
+            <p>© 2026 Juan Manuel</p>
+        </footer>
+        <p>Tambien puede contener:</p>
+        <footer>
+            <p>© 2026 Juan Manuel</p>
+            <a href="contacto.html">Contacto</a>
+        </footer>
+    </fieldset>
+    <hr>
+    <fieldset>
+        <legend><code><h3>&lt;div&gt;</h3></code></legend>
+        <p>El div es un contenedor generico, no tiene un significado especial</p>
+        <div>
+            <p>Hola mundo</p>
+        </div>
+        <p>En cambio el header es un encabezado</p>
+        <header>
+            <p>Hola mundo</p>
+        </header>
+    </fieldset>
+    <hr>
+    <fieldset>
+        <legend><code><h3>span</h3></code></legend>
+        <p>span es parecido a div, pero tiene una diferencia fundamental</p>
+        <p>div normalmente se utiliza como contenedor de bloque</p>
+        <p>span se utiliza para una parte pequeña de contenido en linea, por ejemplo</p>
+        <p>
+            Estoy aprendiendo
+            <span>HTML</span>.
+        </p>
+    </fieldset>
+</body>
+</html>

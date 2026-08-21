@@ -9,12 +9,14 @@ Repositorio donde documento mi aprendizaje de HTML desde cero hasta avanzado.
 - [x] Lección 3 - Enlaces e imágenes
 - [x] Lección 4 - Listas
 - [x] Lección 5 - Tablas
-- [ ] Lección 6 - Formularios
-- [ ] Lección 7 - HTML semántico
-- [ ] Lección 8 - Multimedia
-- [ ] Lección 9 - Accesibilidad
-- [ ] Lección 10 - HTML avanzado
-- [ ] Lección 11 - Proyecto final
+- [x] Lección 6 - Formularios
+- [x] Lección 7 - HTML semántico
+- [ ] Lección 8 - iframe
+- [ ] Lección 9 - Multimedia
+- [ ] Lección 10 - Meta etiquetas
+- [ ] Lección 11 - Accesibilidad
+- [ ] Lección 12 - HTML avanzado
+- [ ] Proyecto final
 
 ## Objetivo
 
