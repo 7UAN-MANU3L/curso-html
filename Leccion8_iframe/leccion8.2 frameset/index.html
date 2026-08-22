@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio Frameset</title>
+</head>
+<!--<frameset rows="100px,*,80px"> Estamos dividiendo la ventana en filas-->
+<!--
+    primera fila -> 100px
+    segundo fila -> * significa utiliza todo el espacio disponible
+    tercera fila -> 80px-->
+<frameset rows="100px,*,80px">
+    <frame src="encabezado.html" name="encabezado">
+
+    <!--Aca dividimos horizontalmente-->
+    <frameset cols="200px,*">
+        <!--Carga menu al lado izquierdo-->
+        <frame src="menu.html" name="menu">
+        <!--Carga inicio al lado derecho-->
+        <!--src indica que pagina de html quiero cargar dentro de este frame-->
+        <frame src="inicio.html" name="contenido">
+            <!--¿que significa name? name permite identificar el frame-->
+    </frameset>
+
+    <frame src="footer.html" name="footer">
+</frameset>
+
+</html>
