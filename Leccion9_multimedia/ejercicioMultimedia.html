@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio - Multimedia</title>
+</head>
+<body>
+    <header>
+        <h1>Mi contenido multimedia ejemplo</h1>
+        <p>En esta pagina presento algunos ejemplos de recurso multimedia. como reto de la leccion</p>
+    </header>
+    
+    <main>
+        <section>
+            <h2>MI imagen</h2>
+            <img src="photo-1494500764479-0c8f2919a3d8.avif" alt="Paisaje" width="300" height="220">
+        </section>
+
+        <section>
+            <h2>Mi audio</h2>
+            <audio controls>
+                <source src="cancion.mp3" type="audio/mpeg">
+            </audio>
+        </section>
+
+        <section>
+            <h2>Mi video</h2>
+            <video controls width="400">
+                <source src="video.mp4" type="video/mp4">
+            </video>
+        </section>
+
+        <section>
+            <h2>Mi video con subtitulos</h2>
+            <video controls width="360">
+                <source src="video.mp4" type="video/mp4">
+
+                <track
+                src="subtitulos.vtt"
+                kind="subtitles"
+                srclang="es"
+                label="Español">
+            </video>
+        </section>
+
+        <section>
+            <h2>Video de Youtube</h2>
+            <iframe 
+                width="300"
+                height="250"
+                src="https://www.youtube.com/embed/47dtFZ8CFo8"
+                title="safe and sound"
+                allowfullscreen>
+            </iframe>
+        </section>
+        
+        <section>
+            <h2>Galeria multimedia</h2>
+            <img src="photo-1494500764479-0c8f2919a3d8.avif"
+            width="300"
+            alt="Paisaje">
+            <img src="arbol.jpg" alt="Arbol">
+            <p>He aprendido que se puede insertar videos con subtitulos, e insertar videos de Youtube</p>
+        </section>
+    </main>
+    <footer>© 2026 Juan Manuel</footer>
+</body>
+</html>

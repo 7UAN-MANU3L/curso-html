@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Multimedia</title>
+</head>
+<body>
+    <header>
+        <h1>¿Qué significa Multimedia en HTML?</h1>
+        <p>En HTML, multimedia es todo contenido que no sea solamente texto</p>
+    </header>
+    <main>
+        <section>
+            <p>Por ejemplo:</p>
+            <ul>
+                <li>Imagenes</li>
+                <li>Audio</li>
+                <li>Video</li>
+                <li>Contenido externo mediante iframe</li>
+            </ul>
+           </section>
+           
+           <section>
+            <h2>Imagenes: &lt;img&gt;</h2>
+            <p>La etiqueta basica es </p>
+            <p><code>&lt;img src="foto.jpg" alt="Una foto"&gt;</code></p>
+            <h4>Atributos importantes</h4>
+            <p>src &rarr; Indica donde esta la imagen</p>
+            <img src="foto.jpg" alt="Una foto">
+            <p>alt &rarr; texto que describe la imagen</p>
+            <p>Es importante para accesibilidad y tambien aparece si la imagen no puede cargarse.</p>
+            <h4>Cambiar Tamaño</h4>
+            <p><code>&lt;img src="foto.jpg" alt="Un paisaje" width="500" height="300"&gt;</code></p>
+           </section>
+
+           <section>
+            <h2>Audio: &lt;audio&gt;</h2>
+            <p>Para colocar un reproductor de audio:</p>
+            <p><code>&lt;audio controls&gt;</code></p>
+            <p><code>&lt;source src="cancion.mp3" type="audio/mpeg"&gt;</code></p>
+            <p><code>&lt;/audio&gt;</code></p>
+            <audio controls>
+                <source src="cancion.mp3" type="audio/mpeg">
+            </audio>
+            <p>El atributo <code>controls</code> hace que aparezcan los controles de reproduccion.</p>
+            <p>Por ejemplo</p>
+            <ul>
+                <li>Play</li>
+                <li>Volumen</li>
+                <li>Pausa</li>
+                <li>Barra de progreso</li>
+            </ul>
+            <h4>Formato comunes</h4>
+            <audio controls>
+                <source src="cancion.mp3" type="audio/mpeg">
+                <source src="cancion.mp3" type="audio/ogg">
+            </audio>
+            <p>Puede proporcionar varios formatos para mejorar la compatibilidad entre navegadores</p>
+           </section>
+
+           <section>
+            <h2>Video: &lt;video&gt;</h2>
+            <p>Es muy parecido al audio</p>
+            <p><code>&lt;video controls width="640"&gt;</code></p>
+            <p><code>&lt;source src="pelicula.mp4" type="video/mp4"&gt;</code></p>
+            <p><code>&lt;/video&gt;</code></p>
+
+            <video controls width="640">
+                <source src="pelicula.mp4" type="video/mp4">
+            </video>
+            <p>controls muestra:</p>
+            <ul>
+                <li>Reproducir</li>
+                <li>Pausa</li>
+                <li>Volumen</li>
+                <li>Pantalla completa</li>
+                <li>Barra de Progreso</li>
+            </ul>
+            <p>Tambien puede establecer la altura:</p>
+            <p><code>&lt;video controls width="640" height="360"&gt;</code></p>
+            <p><code>&lt;source src="pelicula.mp4" type="video/mp4"&gt;</code></p>
+            <p><code>&lt;/video&gt;</code></p>
+            <p>Atributos importantes de &lt;video&gt; autoplay</p>
+            <p><code>&lt;video autoplay&gt;</code></p>
+            <p><code>&lt;source src="video.mp4" type="video/mp4"&gt;</code></p>
+            <p><code>&lt;/video&gt;</code></p>
+            <video autoplay>
+                <source src="video.mp4" type="video/mp4">
+            </video>
+            <p>Pero los navegadores suelen restringir el autoplay con sonido.</p>
+            <p>Por eso es comun encontrar:</p>
+            <p><code>&lt;video autoplay muted&gt;</code></p>
+            <p>loop</p>
+            <p>Hace que el video se repita:</p>
+            <p><code>&lt;video controls loop&gt;</code></p>
+            <p><code>&lt;source src="video.mp4" type="video/mp4"&gt;</code></p>
+            <p><code>&lt;/video&gt;</code></p>
+            <video controls loop>
+                <source src="video.mp4" type="video/mp4">
+            </video>
+            <p>Cuando termina, vuelve a comenzar.</p>
+            <p>muted</p>
+            <p>Inicia el video sin sonido:</p>
+            <p><code>&lt;video controls muted&gt;</code></p>
+            <p><code>&lt;source src="video.mp4" type="video/mp4"&gt;</code></p>
+            <p><code>&lt;/video&gt;</code></p>
+            <p>poster</p>
+            <p>Permite colocar una imagen que se muestra antes de reproducir el video:</p>
+            <p><code>&lt;video controls poster="portada.jpg"&gt;</code></p>
+            <p><code>&lt;source src="video.mp4" type="video/mp4"&gt;</code></p>
+            <p><code>&lt;/video&gt;</code></p>
+            <video controls poster="/leccion3_enlaces_imagenes/MiSitio/imagenes/arbol.jpg">
+                <source src="video.mp4" type="video/mp4">
+            </video>
+           </section>
+
+           
+           <section>
+            <h2>Youtube y contenido externo:&lt;iframe&gt;</h2>
+            <p>Cuando se quiere insertar algo que esta en otra pagina, se puede utilizar un iframe.</p>
+            <p>Por ejemplo, un video de Youtube normalmente es inserta mediante un codigo parecido a:</p>
+            <p><code>&lt;iframe<br>
+                width="560"<br>
+                height="315"<br>
+                src="https://www.youtube.com/embed/ID_DEL_VIDEO"<br>
+                allowfullscreen&gt;</code></p>
+            
+                <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/8UVNT4wvIGY"
+                    title="Somebody That I Used To Know - Gotye"
+                    
+                    allowfullscreen>
+                </iframe>
+                <p>Un iframe basicamente crea una ventana dentro de la pagina donde se muetra contenido externo.</p>
+                <p>No solamente sirve para videos. Tambien puede utilizarse para otros contenidos que permitan ser incrustados.</p>
+           </section>
+
+           <section>
+            <h3>Diferencia entre &lt;img&gt;, &lt;audio&gt;, &lt;video&gt; e &lt;iframe&gt;</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Etiqueta</th>
+                        <th>Sirve para</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>&lt;img&gt;</td>
+                        <td>Imagenes</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;audio&gt;</td>
+                        <td>Audio</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;video&gt;</td>
+                        <td>Video</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;iframe&gt;</td>
+                        <td>Contenido externo incrustado</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>Una forma facil de memorizarlo:</p>
+            <p>IMAGEN &rarr; img</p>
+            <p>AUDIO &rarr; audio</p>
+            <p>VIDEO &rarr; video</p>
+            <p>EXTERNO &rarr; iframe</p>
+            <p>track &rarr; Subtitulos</p>
+           </section>
+           <section>
+            <video controls>
+                <source src="clase.mp4" type="video/mp4">
+                <track
+                src="subtitulo.vtt"
+                kind="subtitles"
+                srclang="es"
+                label="Español">
+            </video>
+           </section>
+    </main>
+</body>
+</html>
