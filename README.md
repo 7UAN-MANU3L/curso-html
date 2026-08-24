@@ -13,7 +13,7 @@ Repositorio donde documento mi aprendizaje de HTML desde cero hasta avanzado.
 - [x] Lección 7 - HTML semántico
 - [x] Lección 8 - iframe
 - [x] Lección 9 - Multimedia
-- [ ] Lección 10 - Meta etiquetas
+- [x] Lección 10 - Meta etiquetas
 - [ ] Lección 11 - Accesibilidad
 - [ ] Lección 12 - HTML avanzado
 - [ ] Proyecto final
