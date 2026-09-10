@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio de Accesibilidad</title>
+    <meta name="exercise" content="Ejercicio de Accesibilidad en el desarrollo web">
+    <meta name="author" content="Juan Manuel">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#1565c0">
+</head>
+<body>
+<header>
+    <h1>Mi perfil profesional</h1>
+    <p>Juan Manuel</p>
+    <p>Este es un ejemplo de un perfil profesional</p>
+</header>
+<nav>
+    <ul>
+        <li><a href="ejercicioAccesibilidad.html">Inicio</a></li>
+        <li><a href="concepto.html">Concepto de Accesibilidad</a></li>
+        <li><a href="https://www.w3.org/WAI/">W3C Web Accessibility Initiative (WAI)</a></li>
+        <li><a href="https://developer.mozilla.org/es/docs/Learn/Accessibility">MDN Web Docs - Accesibilidad</a></li>
+        <li><a href="https://webaim.org/">WebAIM</a></li>
+    </ul>
+</nav>
+<main>
+    <section>
+        <h2>Sobre mí</h2>
+        <p>Soy un desarrollador web en proceso sin ninguna experiencia en la creación de sitios accesibles y amigables para todos los usuarios.</p>
+        <p>Me apasiona la tecnología.</p>
+    </section>
+
+    <section>
+        <h2>Imagen</h2>
+        <img src="Accesibilidad.jpg" alt="Imagen de accesibilidad"
+        width="300" height="200">
+        <p>Imagen representativa de accesibilidad web.</p>
+    </section>
+
+    <section>
+        <h2>Mis conocimientos</h2>
+        <ul>
+            <li>HTML basico</li>
+            <li>Java basico</li>
+            <li>C++ basico</li>
+            <li>Python basico</li>
+        </ul>
+    </section>
+    
+    <section>
+        <h2>Listas de Tecnologías</h2>
+        <ul>
+            <li>HTML</li>
+            <li>Java</li>
+            <li>C++</li>
+            <li>Python</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Formulario de contacto</h2>
+        <form>
+            <label for="nombre">Nombre:</label>
+            <input 
+                type="text" 
+                id="nombre" 
+                name="nombre" 
+                required>
+                <br>
+            <label for="email">Correo electrónico:</label>
+            <input
+                type="email"
+                id="email"
+                name="email"
+                required>
+                <br>
+            <label for="asunto">Asunto:</label>
+            <input
+                type="text"
+                id="asunto"
+                name="asunto"
+                required>
+                <br>
+            <label for="mensaje">Mensaje:</label>
+            <textarea
+                id="mensaje"
+                name="mensaje"
+                required>
+            </textarea>
+            <br>
+        <fieldset>
+            <legend>Nivel de experiencia:</legend>
+            <select id="nivel" name="nivel" required>
+                <option value="">Selecciona un nivel</option>
+                <option value="principiante">Principiante</option>
+                <option value="intermedio">Intermedio</option>
+                <option value="avanzado">Avanzado</option>
+            </select>
+            <br>
+        </fieldset>
+            
+        <fieldset>
+            <legend>Tecnologias de Interes:</legend>
+            <input type="checkbox" id="html" name="tecnologias" value="html">
+            <label for="html">HTML</label>
+            <input type="checkbox" id="css" name="tecnologias" value="css">
+            <label for="css">CSS</label>
+            <input type="checkbox" id="javascript" name="tecnologias" value="javascript">
+            <label for="javascript">JavaScript</label>
+            <input type="checkbox" id="python" name="tecnologias" value="python">
+            <label for="python">Python</label>
+            <input type="checkbox" id="cpp" name="tecnologias" value="cpp">
+            <label for="cpp">C++</label>
+            <label for="java">Java</label>
+            <input
+                type="checkbox" id="java" name="tecnologias" value="java">
+        </fieldset>
+            
+            <br>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+</main>
+<footer>
+    <p>2026 Juan Manuel</p>
+</footer>
+</body>
+</html>

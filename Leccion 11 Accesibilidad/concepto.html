@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concepto de Accesibilidad</title>
+    <meta name="concept" content="Concepto de Accesibilidad en el desarrollo web">
+    <meta name="author" content="Juan Manuel">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#1565c0">
+
+</head>
+<body>
+    <header>
+        <h1>Concepto de Accesibilidad</h1>
+        <p>La accesibilidad en el desarrollo web se refiere a la práctica de diseñar y desarrollar sitios web que puedan ser utilizados por la mayor cantidad de personas posible, incluyendo aquellas con discapacidad.</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>¿Qué es la accesibilidad web?</h2>
+            <p>La accesibilidad web consiste en diseñar y desarrollar sitios o aplicaciones que puedan ser utilizadas por personas con diferentes capacidades.</p>
+            <p>Por ejemplo, una persona puede:</p>
+            <ul>
+                <li>Tener discapacidad visual</li>
+                <li>Utilizar un lector de pantallas</li>
+                <li>Tener dificultades para utilizar el mouse</li>
+                <li>Tener dificultades para utilizar el teclado</li>
+                <li>Tener discapacidad auditiva</li>
+                <li>Tener dificultades cognitivas</li>
+                <li>Necesitar aumentar el tamaño del texto</li>
+                <li>etc.</li>
+
+            </ul>
+        </section>
+        <section>
+            <h2>Importancia de la accesibilidad web</h2>
+            <p>La accesibilidad web es importante porque permite que todas las personas puedan acceder a la información y servicios en línea, independientemente de sus capacidades. Además, mejora la experiencia del usuario y puede aumentar el alcance de un sitio web.</p>
+        </section>
+
+        <section>
+            <h2>Buenas prácticas para la accesibilidad web</h2>
+            <p>Algunas buenas prácticas para mejorar la accesibilidad web incluyen:</p>
+            <ul>
+                <li>Utilizar texto alternativo para imágenes</li>
+                <li>Proporcionar subtítulos para videos</li>
+                <li>Usar colores con buen contraste</li>
+                <li>Permitir la navegación mediante teclado</li>
+                <li>Evitar el uso de contenido que parpadea o se mueve rápidamente</li>
+                <li>Utilizar encabezados y estructuras semánticas adecuadas</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Recursos para aprender más sobre accesibilidad web</h2>
+            <p>Existen muchos recursos en línea para aprender más sobre accesibilidad web, incluyendo:</p>
+            <ul>
+                <li><a href="https://www.w3.org/WAI/">W3C Web Accessibility Initiative (WAI)</a></li>
+                <li><a href="https://developer.mozilla.org/es/docs/Learn/Accessibility">MDN Web Docs - Accesibilidad</a></li>
+                <li><a href="https://webaim.org/">WebAIM</a></li>
+            </ul>
+        </section>
+        
+        <section>
+            <h2>¿Qué elementos son naturalmente accesibles?</h2>
+            <p>HTML ya proporciona muchos elementos preparados para  interacción con teclado y lectores de pantalla, como:</p>
+            <ul>
+                <li><code>&lt;a&gt;</code></li>
+                <li><code>&lt;button&gt;</code></li>
+                <li><code>&lt;input&gt;</code></li>
+                <li><code>&lt;select&gt;</code></li>
+                <li><code>&lt;textarea&gt;</code></li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>¿Qué es ARIA?</h2>
+            <p>ARIA (Accessible Rich Internet Applications) proporciona atributos que pueden ayudar a comunicar informacion adicional a las tecnologías de asistencia.</p>
+            <p>Ejemplos:</p>
+            <ul>
+                <li><code>aria-label</code></li>
+                <button aria-label="Cerrar ventana">
+                 X
+                 </button>
+                 <p>Otro ejemplo</p>
+                 <button aria-label="Buscar">
+                 🔍
+                 </button>
+                <li><code>aria-hidden</code></li>
+                <li><code>aria-labelledby</code></li>
+                <li><code>aria-describedby</code></li>
+                <li><code>role</code></li>
+        </section>
+
+        <section>
+            <h2>El color no debe ser la unica forma de comunicar información</h2>
+            <p>Es importante utilizar otros medios, como texto o iconos, para convey la misma información que se comunica a través del color.</p>
+            <p>Ejemplo: Un botón rojo puede indicar un error, pero también debe tener texto que lo describa.</p>
+            <p>Correo electrónico</p>
+            <p>[ campo ]</p>
+            <p>⚠ El correo electronico no es válido</p>
+        </section>
+        
+        <section>
+            <h2>Ejemplo completo:</h2>
+            <header>
+                <h1>Registro de usuario</h1>
+            </header>
+            <main>
+                <form>
+                    
+                    <div>
+                        <label for="nombre">Nombre:</label>
+                        <input
+                            type="text"
+                            id="nombre"
+                            name="nombre">
+                    </div>
+
+                    <fieldset>
+                        <legend>Nivel de HTML</legend>
+                        
+                        <div>
+                            <input
+                                type="radio"
+                                id="basico"
+                                name="nivel"
+                                value="basico">
+
+                            <label for="basico">
+                                Básico
+                            </label>
+                        </div>
+                            <div>
+                                <input
+                                    type="radio"
+                                    id="intermedio"
+                                    name="nivel"
+                                    value="intermedio">
+
+                                <label for="intermedio">
+                                    Intermedio
+                                </label>
+                            </div>
+
+                            <div>
+                                <input
+                                    type="radio"
+                                    id="avanzado"
+                                    name="nivel"
+                                    value="avanzado">
+                                <label for="avanzado">
+                                    Avanzado
+                                </label>
+                            </div>
+
+                    </fieldset>
+
+                    <button type="submit">
+                        Registrarse
+                    </button>
+                </form>
+            </main>
+
+            <footer>
+                <p>Curso de Desarrollo Web</p>
+            </footer>
+        </section>
+
+        <h2>Las reglas de oro de accesibilidad</h2>
+        <h3>Regla 1</h3>
+        <p>Utilizar HTML semantico</p>
+        <p><code>&lt;header&gt;</code> </p>
+        <p><code>&lt;nav&gt;</code></p>
+        <p><code>&lt;main&gt;</code></p>
+        <p><code>&lt;article&gt;</code> </p>
+        <code>&lt;footer&gt;</code></p>
+    </main>
+
+</body>
+</html>

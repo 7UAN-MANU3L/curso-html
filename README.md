@@ -14,7 +14,7 @@ Repositorio donde documento mi aprendizaje de HTML desde cero hasta avanzado.
 - [x] Lección 8 - iframe
 - [x] Lección 9 - Multimedia
 - [x] Lección 10 - Meta etiquetas
-- [ ] Lección 11 - Accesibilidad
+- [x] Lección 11 - Accesibilidad
 - [ ] Lección 12 - HTML avanzado
 - [ ] Proyecto final
 
